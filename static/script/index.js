@@ -872,7 +872,7 @@
 								this.x = pos.x;
 								this.y = pos.y;
 							}
-							//方向判定
+							
 							if(this.vector.x>this.coord.x){
 								this.orientation = 0;
 							}else if(this.vector.x<this.coord.x){
@@ -988,7 +988,7 @@
 						}else{
 							context.arc(this.x,this.y,this.width/2,(.5*this.orientation+.01)*Math.PI,(.5*this.orientation-.01)*Math.PI,false);
 						}
-					}else{	//玩家被吃
+					}else{	
 						if(stage.timeout) {
 							context.arc(this.x,this.y,this.width/2,(.5*this.orientation+1-.02*stage.timeout)*Math.PI,(.5*this.orientation-1+.02*stage.timeout)*Math.PI,false);
 						}
